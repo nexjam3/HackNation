@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  height: 80vh;
+}
+
+.content {
+  flex: 0 0 80%;
+  background-color: var(--color-white-2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: var(--color-white-1);
+  flex: 0 0 20%;
+  padding: 4rem 3rem;
+
+  &__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-black-3);
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &:hover {
+      color: var(--color-black-1);
+    }
+  }
+
+  &__icon {
+    color: var(--color-black-3);
+  }
+}

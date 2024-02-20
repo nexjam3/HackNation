@@ -1,0 +1,74 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  background-color: #fff;
+
+  &__logo {
+    margin-left: 2rem;
+    height: 4rem;
+  }
+
+  &__text {
+    margin-left: 6rem;
+    margin-right: auto;
+    color: var(--color-black-2);
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    gap: 2rem;
+
+    &__img {
+      height: 4.2rem;
+      width: 4.2rem;
+      border-radius: 50%;
+    }
+
+    &__text {
+      font-size: 2rem;
+      font-weight: 450;
+      color: var(--color-black-2);
+    }
+  }
+}
+
+// Vechils Tab
+.vechils {
+  &__box {
+    background-color: var(--color-white-1);
+    height: 50rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__content {
+    padding: 3rem;
+    overflow: scroll;
+  }
+
+  &__info {
+    margin-bottom: 3rem;
+
+    &__span {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &__name {
+      width: 60%;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #fcc419;
+    }
+  }
+}

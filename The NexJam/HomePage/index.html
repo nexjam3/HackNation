@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RideSync</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <
+  body>
+    <div class="section-nav">
+      <div class="nav-main container">
+        <img src="./Img/logo-no-background.png" alt="Logo" class="nav__logo" />
+        <div class="nav__det">
+          <a href="#" class="nav__link">Ride</a>
+          <a href="#" class="nav__link">Drive</a>
+          <a href="./../SyncEats/index.html" target=_blank class="nav__link">SyncEats</a>
+          <div class="nav__about">
+            <a href="#" class="nav__link nav__about--link">About</a>
+            <ion-icon
+              name="chevron-up-outline"
+              class="nav__about--icon"
+            ></ion-icon>
+          </div>
+        </div>
+
+        <div class="nav__btn">
+          <button class="nav__link nav__log nav__active" >Log in</button>
+          <button class="nav__sign nav__active">Sign up</button>
+          <a href="#" class="nav__user ">Nothing</a>
+        </div>
+      </div>
+
+      <section class="sol-aside display-open">
+        <div class="sol-box container grid-col-4">
+            <div class="sol-content">
+                <div class="sol-head">
+                    <ion-icon name="megaphone-outline" class="sol-icon green-icon"></ion-icon>
+                    <p class="sol-head-text">Host
+                </div>
+
+                <ul class="sol-list-box">
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Host own vehicle
+                        </p>
+                        <a class="sol-list-link">Host your vehicle</a>
+                        </a>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Create Your Network
+                        </p>
+                        <a class="sol-list-link">More rating more chances</a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Customize your time
+                        </p>
+                        <a class="sol-list-link">Since it's part time
+
+                        </a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Find your way
+                        </p>
+                        <a class="sol-list-link">HIghly flexible</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sol-content">
+                <div class="sol-head">
+                    <ion-icon name="aperture-outline" class="sol-icon blue-icon"></ion-icon>
+                    <p class="sol-head-text">Ride</p>
+                </div>
+
+                <ul class="sol-list-box">
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Start your journey
+                        </p>
+                        <a class="sol-list-link">Get inspired</a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Craft your online presence
+                        </p>
+                        <a class="sol-list-link">Show if you are available</a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Expand Your presence
+                        </p>
+                        <a class="sol-list-link">The more you grow the more you get</a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Optimize your operations
+                        </p>
+                        <a class="sol-list-link">Take ride in 3 steps</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="sol-content">
+                <div class="sol-head">
+                    <ion-icon name="cellular-outline" class="sol-icon orange-icon"></ion-icon>
+                    <p class="sol-head-text">Market</p>
+                </div>
+
+                <ul class="sol-list-box">
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Discover unique opportunities
+                        </p>
+                        <a class="sol-list-link">Explore niche audiance</a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Build your online presence effortlessly
+                        </p>
+                        <a class="sol-list-link">Easy-to-use website
+                            </a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Stand out with captivating reviews
+                        </p>
+                        <a class="sol-list-link">Ascend your society reach</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="sol-content">
+                <div class="sol-head">
+                    <ion-icon name="calendar-clear-outline" class="sol-icon red-icon"></ion-icon>
+                    <p class="sol-head-text">Manage</p>
+                </div>
+
+                <ul class="sol-list-box">
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Part-time Opportunity
+                        </p>
+                        <a class="sol-list-link">Flexible timings</a>
+                    </li>
+                    <li class="sol-list">
+                        <p class="sol-list-text">
+                            Expand your reach
+                        </p>
+                        <a class="sol-list-link">Tap into local markets</a>
+                    </li>
+                </ul>
+            </div>
+          
+        </div>
+    </section>
+    </div>
+    <header class="header">
+      <!-- <div class="section-nav">
+        <div class="nav container">
+          <img
+            src="./Img/logo-no-background.png"
+            alt="Logo"
+            class="nav__logo"
+          />
+          <div class="nav__det">
+            <a href="#" class="nav__link">Ride</a>
+            <a href="#" class="nav__link">Drive</a>
+            <a href="#" class="nav__link">Sync Eat</a>
+            <div class="nav__about">
+              <a href="#" class="nav__link nav__about--link">About</a>
+              <ion-icon
+                name="chevron-up-outline"
+                class="nav__about--icon"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="nav__btn">
+            <a href="#" class="nav__link">Log in</a>
+            <a href="#" class="nav__sign">Sign up</a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="content container">
+        <h1 class="heding-primary">
+          Connecting Journeys,
+          <span class="heding-primary--span">Sharing Rides</span>
+        </h1>
+        <p class="content__text">Book a ride now, enjoy Sharing</p>
+        <div class="content__box">
+          <form action="#" class="content__box__form">
+            <div class="content__box__point content__box__point--start"></div>
+            <input
+              type="text"
+              class="content__box__input"
+              placeholder="Enter your Location"
+            />
+            <ion-icon
+              name="navigate-outline"
+              class="content__box__icon"
+            ></ion-icon>
+          </form>
+
+          <form action="#" class="content__box__form">
+            <div class="content__box__point content__box__point--end"></div>
+            <input
+              type="text"
+              class="content__box__input"
+              placeholder="Enter your Destination"
+            />
+          </form>
+          <div class="content__box__line"></div>
+        </div>
+        <a href="./../TrackPage/track.html" class="content__btn">Get Ride</a>
+      </div>
+    </header>
+
+    <section class="section-user section">
+      <div class="user container">
+        <p class="span__text">For User</p>
+        <h2 class="heading-secondary">
+          More than just a ride, it's a community
+        </h2>
+        <div class="user__boxes grid-col-4">
+          <div class="user__box">
+            <div class="user__fetures">
+              <ion-icon
+                name="bicycle-outline"
+                class="user__fetures__icons"
+              ></ion-icon>
+              <h3 class="user__fetures__tag">Find rides with ease</h3>
+              <ul class="user__fetures__lists">
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Filter for shared rides
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Transparency about drivers
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">Vetted & secure</p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Real-time communication
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user__box">
+            <div class="user__fetures">
+      
+              <ion-icon
+                name="cash-outline"
+                class="user__fetures__icons"
+              ></ion-icon>
+              <h3 class="user__fetures__tag">Cost-effective transportation:</h3>
+              <ul class="user__fetures__lists">
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Pay per use
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Travel spontaneously
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">Compare prices</p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    No parking fees
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user__box">
+            <div class="user__fetures">
+              <ion-icon
+                name="accessibility-outline"
+                class="user__fetures__icons"
+              ></ion-icon>
+              <h3 class="user__fetures__tag">Convenience and flexibility</h3>
+              <ul class="user__fetures__lists">
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    No car needed
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    On-demand availability
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">One-way rentals</p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Avoid public transportation
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="user__box">
+            <div class="user__fetures">
+              <ion-icon
+                name="grid-outline"
+                class="user__fetures__icons"
+              ></ion-icon>
+              <h3 class="user__fetures__tag">Variety and accessibility</h3>
+              <ul class="user__fetures__lists">
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Wider selection
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Try new models
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Sustainable option
+                  </p>
+                </li>
+                <li class="user__fetures__items">
+                  <ion-icon
+                    name="caret-forward-outline"
+                    class="user__fetures__items__icon"
+                  ></ion-icon>
+                  <p class="user__fetures__items__text">
+                    Share the cost
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sign">
+          <button class="sign__btn">Sign in as user</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-driver section">
+      <div class="driver container">
+        <p class="span__text">For Driver</p>
+        <h2 class="heading-secondary">
+          Boost your budget, one shared ride at a time.
+        </h2>
+        <div class="driver__boxes grid-col-2">
+          <div class="driver__box">
+            <img
+              src="./Img/fea1.jpg"
+              alt="Nothing"
+              class="driver__box__img"
+            />
+          </div>
+
+          <div class="driver__box">
+            <div class="driver__box__content">
+              <h3 class="heading-teriary">Flexible Ride Sharing</h3>
+              <p class="passage">
+                Choose to share specific journeys you're already taking (e.g.,
+                commuting to work) or open up availability for spontaneous
+                requests.
+              </p>
+            </div>
+          </div>
+
+          <div class="driver__box">
+            <div class="driver__box__content">
+              <h3 class="heading-teriary">Part-Time Earnings</h3>
+              <p class="passage">
+                Clearly communicate upfront earnings potential based on
+                distance, time, and platform fees.
+              </p>
+            </div>
+          </div>
+
+          <div class="driver__box">
+            <img
+              src="./Img/fea4.jpg"
+              alt="Nothing"
+              class="driver__box__img"
+            />
+          </div>
+
+          <div class="driver__box">
+            <img
+              src="./Img/fea4.png"
+              alt="Nothing"
+              class="driver__box__img"
+            />
+          </div>
+
+          <div class="driver__box">
+            <div class="driver__box__content">
+              <h3 class="heading-teriary">Quick Onboarding</h3>
+              <p class="passage">
+                Simplified registration process with minimal documentation,
+                perfect for occasional use.
+              </p>
+            </div>
+          </div>
+
+          <div class="driver__box">
+            <div class="driver__box__content">
+              <h3 class="heading-teriary">Safety & Security Features</h3>
+              <p class="passage">
+                Background checks, in-app messaging to connect with riders
+                before accepting, and emergency contact options for peace of
+                mind.
+              </p>
+
+              <div class="sign sign--driver">
+                <button class="sign__btn">Sign in as driver</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="driver__box">
+            <img
+              src="./Img/fea3.jpg"
+              alt="Nothing"
+              class="driver__box__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-work section">
+      <div class="work container">
+        <p class="span__text">How It Works</p>
+        <div class="work__boxes grid-col-4">
+          <div class="work__box">
+            <ion-icon name="people-outline" class="work__box__logo"></ion-icon>
+            <div class="work__box__tag">Connect</div>
+            <div class="work__box__text">
+              Connect to your ride with in few clicks , no matter whether you are hosting or you are searching for rides
+            </div>
+          </div>
+
+          <div class="work__box">
+            <ion-icon name="chatbubbles-outline" class="work__box__logo"></ion-icon>
+            <div class="work__box__tag">Discuss Your Trips</div>
+            <div class="work__box__text">
+              Discuss Your trips with your significant one to have a fair understanding 
+            </div>
+          </div>
+
+          <div class="work__box">
+            <ion-icon name="cash-outline" class="work__box__logo"></ion-icon>
+            <div class="work__box__tag">Discuss Your Cash-Out</div>
+            <div class="work__box__text">
+              RideSync shall suggest a cash out plan which will be suggested according to the distance travelled .
+            </div>
+          </div>
+
+          <div class="work__box">
+            <ion-icon name="car-sport-outline" class="work__box__logo"></ion-icon>
+            <div class="work__box__tag">Have Your Ride</div>
+            <div class="work__box__text">
+              After getting the perfect RideSync Enjoy your ride with a pocket friendly fare ! 
+            </div>
+          </div>
+        </div>
+
+        <div class="work__line"></div>
+      </div>
+    </section>
+
+    <section class="section-testimonial section" id="section--3">
+      <div class="section__title section__title--testimonials container">
+        <h2 class="span__text">Not sure yet?</h2>
+        <h3 class="heading-secondary heading-secondary--white">
+          Your city, on demand. Neighbors sharing rides, building community
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Getaround connects me to amazing rides and memories.
+            </h5>
+            <blockquote class="testimonial__text">
+              love exploring new cities, but car rentals can be expensive.
+              Getaround lets me rent unique cars from locals, which adds to the
+              whole experience. Plus, I've gotten some great insider tips from
+              car owners!"
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="Img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Namita Singh</h6>
+              <p class="testimonial__location">Cuttack, Odisha</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Zipcar helps me go green without giving up convenience.
+            </h5>
+            <blockquote class="testimonial__text">
+              I wanted to reduce my carbon footprint but public transportation
+              wasn't always an option. Zipcar gives me easy access to electric
+              cars whenever I need them. It's convenient, affordable, and good
+              for the planet!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="Img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Rahul Yadav</h6>
+              <p class="testimonial__location">BBSR, Odisha</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Sharing rides keeps my life rolling smoothly.
+            </h5>
+            <blockquote class="testimonial__text">
+              As a freelancer, I need a car occasionally but not every day. Turo
+              has been a lifesaver! I find reliable rides at affordable prices,
+              and it saves me so much space and money compared to owning a car
+              myself. Plus, I've met some interesting people sharing rides!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="Img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Mohan Roy</h6>
+              <p class="testimonial__location">Cuttack, Odisha</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer-box container">
+          <div class="footer-logo">
+              <a href="#" class="footer-link">
+                  <img src="Img/logo-no-background.png" alt="logo" class="nav__logo" >
+              </a>
+              <img src="./Img/frame.png" alt="Scan" class="scan__logo">
+          </div>
+
+          <div class="link-box">
+              <p class="footer-heading">RideSync</p>
+              <ul class="footer-list-box">
+                  <li class="footer-list"><a href="#" class="footer-link">About</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Investors</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Partners</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Affiliators</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Legal</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Service Status</a></li>
+              </ul>
+          </div>
+
+          <div class="link-box">
+              <p class="footer-heading">Support</p>
+              <ul class="footer-list-box">
+                  <li class="footer-list"><a href="#" class="footer-link">Driver support</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Help centre</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Hire an Expert</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Affiliators</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">RideSync
+                          Community</a></li>
+              </ul>
+          </div>
+
+          <div class="link-box">
+              <p class="footer-heading">Developers</p>
+              <ul class="footer-list-box">
+                  <li class="footer-list"><a href="#" class="footer-link">RideSync Dev</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">API 
+                          Documentations</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Dev Degree</a></li>
+              </ul>
+          </div>
+
+          <div class="link-box">
+              <p class="footer-heading">Products</p>
+              <ul class="footer-list-box">
+                  <li class="footer-list"><a href="#" class="footer-link">RideSync Plus</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">SyncEat</a></li>
+              </ul>
+          </div>
+
+          <div class="link-box">
+              <p class="footer-heading">Global impact</p>
+              <ul class="footer-list-box">
+                  <li class="footer-list"><a href="#" class="footer-link">Sustainbility</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Social impact</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Build Block</a></li>
+              </ul>
+          </div>
+
+          <div class="link-box">
+              <p class="footer-heading">Solutions</p>
+              <ul class="footer-list-box">
+                  <li class="footer-list"><a href="#" class="footer-link">Online store
+                          builder</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">Website builder</a></li>
+                  <li class="footer-list"><a href="#" class="footer-link">E-commerce
+                          Website</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer-last container">
+          <div class="last-list">
+              <a href="#" class="last-link">India</a>
+              <a href="#" class="last-link">Terms & Conditions</a>
+              <a href="#" class="last-link">Privacy Policy</a>
+              <a href="#" class="last-link">Site map</a>
+          </div>
+
+          <div class="last-logo">
+              <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+              <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+              <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
+              <ion-icon name="logo-youtube" class="footer-icon"></ion-icon>
+              <ion-icon name="logo-linkedin" class="footer-icon"></ion-icon>
+          </div>
+      </div>
+  </footer>
+
+  <section class="section-locations ">
+      <img src="./Img/locations-silicon.png" alt="Locations" class="location-img">
+  </section>
+
+  <div class="wrapper display__none">
+    <nav class="nav">
+      <div class="nav-logo">
+        <p>LOGO .</p>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#" class="link active"></a></li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+          <li><a href="#" class="link"></a></li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn white-btn" id="loginBtn" onclick="login()">
+          Log In
+        </button>
+        <button class="btn" id="registerBtn" onclick="register()">
+          Sign Up
+        </button>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+    <!----------------------------- Form box ----------------------------------->
+    <div class="form-box">
+      <!------------------- login form -------------------------->
+      <div class="login-container" id="login">
+        <div class="top">
+          <span
+            >Don't have an account?
+            <a href="#" onclick="register()">Sign Up</a></span
+          >
+          <header class="sign-in">Log In</header>
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            class="input-field input__userName"
+            placeholder="Username or Email"
+          />
+          <i class="bx bx-user"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            class="input-field input__pass"
+            placeholder="Password"
+          />
+          <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="input-box">
+          <a href="../HomePage/index.html" class="submit">Submit</a>
+        </div>
+        <div class="two-col">
+          <div class="one">
+            <input type="checkbox" id="login-check" />
+            <label for="login-check"> Remember Me</label>
+          </div>
+          <div class="two">
+            <label><a href="#">Forgot password?</a></label>
+          </div>
+        </div>
+      </div>
+      <!------------------- registration form -------------------------->
+      <div class="register-container" id="register">
+        <div class="top">
+          <span
+            >Have an account? <a href="#" onclick="login()">Login</a></span
+          >
+          <header>Sign Up</header>
+        </div>
+        <div class="two-forms">
+          <div class="input-box">
+            <input type="text" class="input-field" placeholder="Firstname" />
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="text" class="input-field" placeholder="Lastname" />
+            <i class="bx bx-user"></i>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="text" class="input-field" placeholder="Email" />
+          <i class="bx bx-envelope"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="number"
+            class="input-field"
+            placeholder="Phone Number"
+            minlength="10"
+            maxlength="10"
+          />
+          <i class="bx bx-envelope"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" class="input-field" placeholder="Password" />
+          <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="input-box">
+          <input type="submit" class="submit" value="Register" />
+        </div>
+        <div class="two-col">
+          <div class="one">
+            <input type="checkbox" id="register-check" />
+            <label for="register-check"> Remember Me</label>
+          </div>
+          <div class="two">
+            <label><a href="#">Terms & conditions</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="script.js"></script>
+  <script src="signup.js"></script>
+  <script src="login.js"></script>
+</html>

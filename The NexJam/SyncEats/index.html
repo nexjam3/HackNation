@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SyncEats</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css file cdn link  -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i> Sync Eats </a>
+      <form action="" class="search-form">
+        <input
+          type="text"
+          name=""
+          placeholder="search here..."
+          id="searchInput"
+        />
+        <button type="submit">
+          <label for="searchBox" class="fas fa-search"></label>
+        </button>
+      </form>
+      <div id="recommendation"></div>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-share" id="theme-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#pricing">pricing</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="image" data-aos="fade-down">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/8hZcUxUOBb4GV1JiDsz1USpT29w=/385x352:1561x1061/1200x800/filters:focal(831x620:1137x926)/cdn.vox-cdn.com/uploads/chorus_image/image/70609268/Burger_King_Plant_based_Double_Cheeezeburger.0.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="content" data-aos="fade-up">
+        <h3>Most Tasty Burger For You</h3>
+        <p>
+          "Savor every bite of our mouthwatering gourmet burger! Juicy beef
+          patty, melty cheese, fresh veggies, and secret sauce, all nestled in a
+          soft brioche bun. It's burger bliss!"
+        </p>
+        <a href="#" class="btn">explore now</a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- filter form section starts  -->
+
+    <section class="form-container" data-aos="zoom-in">
+      <form action="">
+        <div class="inputBox">
+          <span>where</span>
+          <input type="text" placeholder="search places" />
+        </div>
+
+        <div class="inputBox">
+          <span>When</span>
+          <input type="date" />
+        </div>
+
+        <div class="inputBox">
+          <span>Time</span>
+          <input type="time" />
+        </div>
+
+        <input type="submit" value="book now" class="btn" />
+      </form>
+    </section>
+
+    <!-- filter form section ends -->
+    <div class="package-listings">
+      <div class="listings">
+        <div class="container">
+          <div class="header2">
+            <div class="header2-title">
+              <h2>When you're hungry now</h2>
+              <span>The fastest food to your door</span>
+            </div>
+            <div class="header2-viewOptions">
+              <div class="viewAll">
+                <span>View all</span>
+              </div>
+              <div class="viewMore">
+                <span class="arrow circle left"
+                  ><i data-feather="arrow-left"></i>
+                </span>
+                <span class="arrow circle right darker">
+                  <i data-feather="arrow-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="listings-grid">
+            <div class="listings-col">
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1562967914-01efa7e87832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>German Doner Kebab</h3>
+                    <div class="info">
+                      <span>Free delivery | 20-30 MINS | </span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >German | Middle Eastern | Halal | Burger| Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>German Doner Kebab</h3>
+                    <div class="info">
+                      <span>Free delivery | 20-30 MINS | </span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >German | Middle Eastern | Halal | Burger| Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1532636875304-0c89119d9b4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>German Doner Kebab</h3>
+                    <div class="info">
+                      <span>Free delivery | 20-30 MINS | </span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >German | Middle Eastern | Halal | Burger| Fast Food</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="listings-col">
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>German Doner Kebab 222</h3>
+                    <div class="info">
+                      <span>Free delivery | 20-30 MINS | </span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >German | Middle Eastern | Halal | Burger| Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>German Doner Kebab</h3>
+                    <div class="info">
+                      <span>Free delivery | 20-30 MINS | </span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >German | Middle Eastern | Halal | Burger| Fast Food</span
+                  >
+                </div>
+              </div>
+              <div class="listings-grid-element">
+                <div class="image">
+                  <img
+                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                    alt="Listing pic"
+                  />
+                </div>
+                <div class="text">
+                  <div class="text-title">
+                    <h3>German Doner Kebab</h3>
+                    <div class="info">
+                      <span>Free delivery | 20-30 MINS | £</span>
+                    </div>
+                  </div>
+                  <div class="rating">
+                    <span class="circle">4.2</span>
+                  </div>
+                </div>
+                <div class="text-lower">
+                  <span class="smallText"
+                    >German | Middle Eastern | Halal | Burger| Fast Food</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+      <h1 class="heading">our <span>Foods</span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-1.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> NON-Veg Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              "Experience burger perfection with our non-veg delight! Juicy
+              beef, crispy bacon, melted cheese, fresh veggies, and our special
+              sauce, all in a soft bun. It's irresistible!"
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-2.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Veg Burger</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              "Discover veggie bliss with our delicious burger! Crisp veggies,
+              flavorful veggie patty, melted cheese, and our special sauce, all
+              in a soft bun. Satisfaction guaranteed!"
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-3.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Veg Fried-Rice</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              "Delight in our veggie fried rice! Bursting with colorful veggies,
+              fluffy rice, and savory seasonings, it's a flavorful feast that's
+              perfect for any occasion."
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-4.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> NON-Veg Fried Rice</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              "Savor our non-veg fried rice! Loaded with tender chicken,
+              succulent shrimp, crisp veggies, and aromatic seasonings, every
+              bite is a taste sensation you won't forget."
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-5.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Chicken Roast</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              "Try our irresistible chicken roast! Juicy, flavorful, and
+              perfectly roasted. It's a must-have!"
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-6.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Chicken leg piece</h3>
+          </div>
+          <div class="content">
+            <div class="price">290.99 <span>350.99</span></div>
+            <p>
+              "Savor our juicy chicken leg piece! Tender, flavorful, and cooked
+              to perfection. A delicious treat for any occasion!"
+            </p>
+            <a href="#" class="btn"> Order now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- pricing section starts  -->
+
+    <!-- pricing section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading">client's <span>review</span></h1>
+
+      <div class="swiper-container review-slider" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/pic-1.png" alt="" />
+            <h3>Arjun Sharma</h3>
+            <p>
+              "Absolutely Delectable!": The flavors of the dishes at this
+              restaurant are simply exquisite. From the first bite to the last,
+              each dish is crafted with precision and care. The presentation is
+              stunning, and the taste is even better. I particularly recommend
+              trying their signature dish—it's a culinary masterpiece that will
+              leave you craving more!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/pic-2.png" alt="" />
+            <h3>Priya Patel</h3>
+            <p>
+              "A Hidden Gem": I stumbled upon this restaurant by chance, and I'm
+              so glad I did! The atmosphere is cozy and inviting, perfect for a
+              relaxed meal with friends or a romantic dinner for two. The menu
+              offers a fantastic variety of options, from classic favorites to
+              innovative creations. Every dish I've tried has been bursting with
+              flavor, and the service is top-notch. This place is a true hidden
+              gem!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/pic-3.png" alt="" />
+            <h3>Aarav Gupta</h3>
+            <p>
+              "Exceptional Dining Experience": Dining at this restaurant is
+              always a treat. The ambiance is upscale yet comfortable, and the
+              staff is incredibly attentive. The menu features a fantastic
+              selection of dishes, each made with the freshest ingredients and
+              expertly prepared. Whether you're in the mood for seafood, steak,
+              or something vegetarian, there's something for everyone here.
+              Plus, the desserts are out of this world! I highly recommend
+              saving room for a sweet treat at the end of your meal.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/pic-4.png" alt="" />
+            <h3>john deo</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+              sunt eligendi est, dicta maiores amet nihil perferendis, incidunt
+              maxime aspernatur exercitationem laboriosam odio dolores magnam
+              ratione atque, quasi odit. Hic!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <form action="" data-aos="zoom">
+        <div class="inputBox">
+          <input type="text" placeholder="name" data-aos="fade-up" />
+          <input type="email" placeholder="email" data-aos="fade-up" />
+        </div>
+
+        <div class="inputBox">
+          <input type="number" placeholder="number" data-aos="fade-up" />
+          <input type="text" placeholder="subject" data-aos="fade-up" />
+        </div>
+
+        <textarea
+          name=""
+          placeholder="your message"
+          id=""
+          cols="30"
+          rows="10"
+          data-aos="fade-up"
+        ></textarea>
+
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- blog section starts  -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>blogs</span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/img1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>What is bombay and hyderabadi biryani?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/img2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>How many types of burger are there?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/img3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Did you know some facts about pizza?</h3>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 1st jan, 2021 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <h3>our branches</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Bhubneswar </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Cuttack </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Khordha </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Puri </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Balasore </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> packages </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> pricing </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> review </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> contact </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> blogs </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +91-234-567-1890 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +91-311-222-3333 </a>
+          <a href="#"> <i class="fas fa-envelop"></i> ridesync3@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> Bhubaneswar, india - 400104
+          </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        Powered By <span>NexJam</span> | all rights reserved
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 400,
+      });
+    </script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </body>
+</html>

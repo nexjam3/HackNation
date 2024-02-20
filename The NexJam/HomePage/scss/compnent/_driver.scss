@@ -1,0 +1,20 @@
+.driver {
+  &__boxes {
+    margin-top: 6rem;
+    padding: 5rem;
+    column-gap: 5rem;
+    row-gap: 5rem;
+  }
+
+  &__box {
+    &__img {
+      border-radius: 12px;
+      height: 30rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+
+    &__content {
+      padding: 2rem 0;
+    }
+  }
+}

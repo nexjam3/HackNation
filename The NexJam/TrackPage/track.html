@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/payment.css" />
+    <link rel="stylesheet" href="./tailwindcss-colors.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"
+    ></script>
+    <!-- <script src="https://apis.mappls.com/advancedmaps/api/a64b1e97e4be1d44b67b2ea1fff17fd5/map_sdk?v=3.0&layer=vector"></script> -->
+    <!-- <script src="https://apis.mappls.com/advancedmaps/api/a64b1e97e4be1d44b67b2ea1fff17fd5/map_sdk_plugins?v=3.0&libraries=nearby"></script> -->
+    <!-- <script src="https://apis.mappls.com/advancedmaps/api/a64b1e97e4be1d44b67b2ea1fff17fd5/map_sdk_plugins?v=3.0&libraries=search"></script> -->
+    <!-- <script
+      src="https://apis.mappls.com/advancedmaps/api/a64b1e97e4be1d44b67b2ea1fff17fd5/map_sdk?layer=vector&v=3.0&callback=initMap1"
+      defer
+      async
+    ></script> -->
+    <!-- <script
+      src="https://apis.mappls.com/advancedmaps/api/a64b1e97e4be1d44b67b2ea1fff17fd5/map_sdk?layer=vector&v=3.0&callback=initMap1"
+      defer
+      async
+    ></script> -->
+    <!-- <script src="https://apis.mappls.com/advancedmaps/api/a64b1e97e4be1d44b67b2ea1fff17fd5/map_sdk_plugins?v=3.0&libraries=direction"></script> -->
+    <script defer src="track.js"></script>
+    <title>RideSync-Track</title>
+  </head>
+  <body>
+    <section class="section-ride">
+      <div class="ride">
+        <form class="form">
+          <div class="form__row">
+            <!-- <label class="form__label">Locations</label> -->
+            <input
+              class="form__input form__input--from"
+              placeholder="Enter Pickup Location"
+            />
+          </div>
+          <div class="form__row">
+            <!-- <label class="form__label">Destinations</label> -->
+            <input
+              class="form__input form__input--to"
+              placeholder="Enter Dropoff Location"
+            />
+          </div>
+          <div class="form__row">
+            <!-- <label class="form__label">Type</label> -->
+            <select class="form__input form__input--type">
+              <option value="bike">Bike</option>
+              <option value="car">Car</option>
+              <option value="auto">Auto</option>
+            </select>
+          </div>
+          <button class="form__btn">Get Price</button>
+        </form>
+
+        <div class="book">
+          <div class="book-price">
+            <p class="book-price--text book__text">Total price</p>
+            <p class="book-price--price book__val">233$</p>
+          </div>
+
+          <div class="book-ride">
+            <p class="book-ride--text book__text">Total distance</p>
+            <p class="book-ride--ride book__val">3.4km</p>
+          </div>
+
+          <img src="./img/car-2.png" alt="Mode" class="mode__img" />
+          <button class="form__btn form__btn--price">Book now</button>
+        </div>
+        <img src="./img/profile.jpg" alt="Profile" class="profile__img" />
+      </div>
+    </section>
+    <section class="section-map">
+      <div id="map"></div>
+    </section>
+    <section class="payment-section display__none">
+      <div class="container">
+        <div class="payment-wrapper">
+          <div class="payment-left">
+            <div class="payment-header">
+              <div class="payment-header-icon">
+                <i class="ri-flashlight-fill"></i>
+              </div>
+              <div class="payment-header-title">Order Summary</div>
+              <p class="payment-header-description"></p>
+            </div>
+            <div class="payment-content">
+              <div class="payment-body">
+                <!-- <div class="payment-plan">
+                  <div class="payment-plan-type">Pro</div>
+                  <div class="payment-plan-info">
+                    <div class="payment-plan-info-name">RideSync+</div>
+                    <div class="payment-plan-info-price">$49 per month</div>
+                  </div>
+                  <a href="#" class="payment-plan-change">Change</a>
+                </div> -->
+                <div class="payment-summary">
+                  <div class="payment-summary-item">
+                    <div class="payment-summary-name">Ride price</div>
+                    <div
+                      class="payment-summary-price payment__ride--price"
+                    ></div>
+                  </div>
+                  <div class="payment-summary-item">
+                    <div class="payment-summary-name">Additional fee</div>
+                    <div class="payment-summary-price">₹10</div>
+                  </div>
+                  <div class="payment-summary-item">
+                    <div class="payment-summary-name">Discount 20%</div>
+                    <div class="payment-summary-price">-₹10</div>
+                  </div>
+                  <div class="payment-summary-divider"></div>
+                  <div class="payment-summary-item payment-summary-total">
+                    <div class="payment-summary-name">Total</div>
+                    <div
+                      class="payment-summary-price payment__ride--ride"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-right">
+            <form action="" class="payment-form">
+              <h1 class="payment-title">Payment Details</h1>
+              <div class="payment-method">
+                <input
+                  type="radio"
+                  name="payment-method"
+                  id="method-1"
+                  checked
+                />
+                <label for="method-1" class="payment-method-item">
+                  <img src="images/visa.png" alt="" />
+                </label>
+                <input type="radio" name="payment-method" id="method-2" />
+                <label for="method-2" class="payment-method-item">
+                  <img src="images/mastercard.png" alt="" />
+                </label>
+                <input type="radio" name="payment-method" id="method-3" />
+                <label for="method-3" class="payment-method-item">
+                  <img src="images/paypal.png" alt="" />
+                </label>
+                <input type="radio" name="payment-method" id="method-4" />
+                <label for="method-4" class="payment-method-item">
+                  <img src="images/upi.jpg" alt="" />
+                </label>
+              </div>
+              <div class="payment-form-group">
+                <input
+                  type="email"
+                  placeholder=" "
+                  class="payment-form-control"
+                  id="email"
+                />
+                <label
+                  for="email"
+                  class="payment-form-label payment-form-label-required"
+                  >Email Address</label
+                >
+              </div>
+              <div class="payment-form-group">
+                <input
+                  type="text"
+                  placeholder=" "
+                  class="payment-form-control"
+                  id="card-number"
+                />
+                <label
+                  for="card-number"
+                  class="payment-form-label payment-form-label-required"
+                  >Card Number</label
+                >
+              </div>
+              <div class="payment-form-group-flex">
+                <div class="payment-form-group">
+                  <input
+                    type="date"
+                    placeholder=" "
+                    class="payment-form-control"
+                    id="expiry-date"
+                  />
+                  <label
+                    for="expiry-date"
+                    class="payment-form-label payment-form-label-required"
+                    >Expiry Date</label
+                  >
+                </div>
+                <div class="payment-form-group">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="payment-form-control"
+                    id="cvv"
+                  />
+                  <label
+                    for="cvv"
+                    class="payment-form-label payment-form-label-required"
+                    >CVV</label
+                  >
+                </div>
+              </div>
+              <a
+                href="./../payment sucessful/sucess.html"
+                class="payment-form-submit-button"
+              >
+                <i class="ri-wallet-line"> &nbsp; Pay</i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

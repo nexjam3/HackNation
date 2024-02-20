@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right bottom, #ff6b6b, #845ef7);
+}
+
+.container {
+  padding: 0 3rem;
+  max-width: 140rem;
+  height: 94vh;
+  background-color: var(--color-white-1);
+  margin: 3vh auto;
+  border-radius: 12px;
+}

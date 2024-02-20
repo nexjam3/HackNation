@@ -1,0 +1,98 @@
+.nav-main {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  &__logo {
+    height: 3.5rem;
+    margin-right: 4rem;
+  }
+
+  &__det {
+    margin-right: auto;
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__link {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+
+  &__about {
+    display: flex;
+    align-items: center;
+
+    &--icon {
+      font-size: 1.5rem;
+      color: var(--color-white);
+      transition: all 0.3s;
+    }
+
+    &--link:hover + &--icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__sign {
+    text-decoration: none;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  &__log,
+  &__sign {
+    display: none;
+  }
+
+  &__user {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: none;
+  }
+
+  &__active {
+    display: block;
+  }
+}
+
+.sticky-nav {
+  background-color: rgba(0, 0, 0, 0.823);
+}
+
+.nav__log {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer;
+}

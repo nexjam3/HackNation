@@ -1,0 +1,44 @@
+.work {
+  text-align: center;
+  position: relative;
+  &__boxes {
+    margin-top: 5rem;
+    padding: 0 4rem;
+    column-gap: 6rem;
+  }
+
+  &__box {
+    text-align: center;
+    z-index: 20;
+
+    &__logo {
+      background-color: #e5dbff;
+      padding: 3rem;
+      border-radius: 50%;
+      font-size: 5rem;
+    }
+
+    &__tag {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &__text {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.5;
+    }
+  }
+  &__line {
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: red;
+    z-index: 10;
+  }
+}

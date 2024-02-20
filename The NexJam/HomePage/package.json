@@ -1,0 +1,14 @@
+{
+  "name": "ridysync",
+  "version": "1.0.0",
+  "description": "hompage",
+  "main": "index.js",
+  "scripts": {
+    "run-sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "ekalabya23",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.912),
+      transparent
+    ),
+    url(../Img/bike-ride.jpg);
+  background-size: cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.section {
+  transition: all 0.5s;
+}
+
+.section-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: initial;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+
+.content {
+  width: 60rem;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+
+  &__text {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 12px;
+  }
+}
+
+.content__box {
+  position: relative;
+  &__form {
+    width: 70%;
+    background-color: var(--color-white);
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__input {
+    width: 90%;
+    padding: 2rem 3rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 1.5rem;
+      color: #555 !important;
+    }
+  }
+
+  &__point {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--color-black);
+  }
+
+  &__icon {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+
+  &__line {
+    position: absolute;
+    top: 21%;
+    left: 2%;
+    width: 0.2rem;
+    height: 8rem;
+    z-index: -10;
+    background-color: var(--color-black);
+  }
+}
+
+.section-user {
+  margin-top: -13rem;
+  padding: 20rem 0 10rem 0;
+  background-color: #f8f9fa;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__btn {
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #222;
+    }
+  }
+
+  &--driver {
+    margin-top: 10rem;
+    justify-content: flex-start;
+  }
+}
+
+.section-driver {
+  padding: 10rem 0 5rem 0;
+}
+
+.section-work {
+  padding: 10rem 0 10rem 0;
+  background-color: #fff5f5;
+}
+
+.section__title {
+  padding: 10 0rem;
+}
+
+.section-testimonial {
+  padding: 5rem;
+  background-image: linear-gradient(to bottom, #000, transparent),
+    url(../Img/forest.jpg);
+  background-size: cover;
+}
+
+.location-img {
+  height: max-content;
+  width: 100vw;
+  opacity: 0.8;
+}

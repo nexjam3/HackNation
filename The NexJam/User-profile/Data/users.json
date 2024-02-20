@@ -1,0 +1,423 @@
+[
+    {
+      "id": 1,
+      "name": "Umesh patel",
+      "username": "up25",
+      "password": "umesh123",
+      "email": "umesh321@gmail.com",
+      "phone": 9437258907,
+      "totalTravelled": 97,
+      "totalRides": 25,
+      "money": 2340,
+      "photo": "./user-img/user2.jpg",
+      "rides": [
+        {
+          "from": "Bhubaneswar",
+          "to": "Cuttack",
+          "date": "23 Aug 2023",
+          "rating": 4.7,
+          "price": 234
+        },
+        {
+          "from": "cuttuck",
+          "to": "Bhubanesar",
+          "date": "27 Aug 2023",
+          "rating": 4.7,
+          "price": 254
+        },
+        {
+          "from": "silicon",
+          "to": "KIIMS",
+          "date": "25 Aug 2023",
+          "rating": 3.7,
+          "price": 34
+        },
+        {
+          "from": "KIIMS",
+          "to": "Patia Square",
+          "date": "13 Aug 2023",
+          "rating": 1.7,
+          "price": 134
+        },
+        {
+          "from": "Damana",
+          "to": "Barmunda",
+          "date": "23 sept 2023",
+          "rating": 4.2,
+          "price": 240
+        },
+        {
+          "from": "Bhubaneswar",
+          "to": "Khordha",
+          "date": "24 Nov 2023",
+          "rating": 3.3,
+          "price": 150
+        },
+        {
+          "from": "cuttuck",
+          "to": "Khordha",
+          "date": "31 Jan 2024",
+          "rating": 1.5,
+          "price": 510
+        },
+        {
+          "from": "Barmunda",
+          "to": "Cuttack",
+          "date": "23 Aug 2023",
+          "rating": 3.3,
+          "price": 330
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rahul Sharma",
+      "username": "rs20",
+      "password": "rahul123",
+      "email": "rahul31@gmail.com",
+      "phone": 9876543210,
+      "totalTravelled": 82,
+      "totalRides": 20,
+      "money": 1240,
+      "photo": "./user-img/user1.jpg",
+      "rides": [
+        {
+          "from": "KIIMS",
+          "to": "Omfed Square",
+          "date": "12 Oct 2023",
+          "rating": 4.5,
+          "price": 180
+        },
+        {
+          "from": "IIT",
+          "to": "Infocity",
+          "date": "15 Nov 2023",
+          "rating": 3.8,
+          "price": 200
+        },
+        {
+          "from": "Patia Square",
+          "to": "Damana",
+          "date": "20 Dec 2023",
+          "rating": 4.2,
+          "price": 150
+        },
+        {
+          "from": "Cuttack",
+          "to": "Khordha",
+          "date": "23 Jan 2024",
+          "rating": 2.3,
+          "price": 220
+        },
+        {
+          "from": "Khordha",
+          "to": "Bhubaneswar",
+          "date": "25 Feb 2024",
+          "rating": 4.1,
+          "price": 210
+        },
+        {
+          "from": "Bhubaneswar",
+          "to": "IIT",
+          "date": "15 Mar 2024",
+          "rating": 3.9,
+          "price": 190
+        },
+        {
+          "from": "Cuttuck",
+          "to": "Patia Square",
+          "date": "20 Apr 2024",
+          "rating": 3.2,
+          "price": 210
+        },
+        {
+          "from": "KIIMS",
+          "to": "Bhubaneswar",
+          "date": "25 May 2024",
+          "rating": 4.0,
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Priya Patel",
+      "username": "pp28",
+      "password": "priya123",
+      "email": "priyas3@gmail.com",
+      "phone": 8765432109,
+      "totalTravelled": 105,
+      "totalRides": 28,
+      "money": 2540,
+      "photo": "./user-img/user3.jpg",
+      "rides": [
+        {
+          "from": "Damana",
+          "to": "Cuttuck",
+          "date": "11 Sept 2023",
+          "rating": 4.3,
+          "price": 220
+        },
+        {
+          "from": "Khordha",
+          "to": "Bhubaneswar",
+          "date": "15 Oct 2023",
+          "rating": 4.7,
+          "price": 240
+        },
+        {
+          "from": "Bhubaneswar",
+          "to": "Infocity",
+          "date": "20 Nov 2023",
+          "rating": 3.9,
+          "price": 190
+        },
+        {
+          "from": "IIT",
+          "to": "Patia Square",
+          "date": "25 Dec 2023",
+          "rating": 3.2,
+          "price": 210
+        },
+        {
+          "from": "Patia Square",
+          "to": "Khordha",
+          "date": "28 Jan 2024",
+          "rating": 4.0,
+          "price": 200
+        },
+        {
+          "from": "Khordha",
+          "to": "Cuttuck",
+          "date": "1 Feb 2024",
+          "rating": 4.2,
+          "price": 180
+        },
+        {
+          "from": "Infocity",
+          "to": "Bhubaneswar",
+          "date": "5 Mar 2024",
+          "rating": 4.1,
+          "price": 220
+        },
+        {
+          "from": "Cuttuck",
+          "to": "IIT",
+          "date": "10 Apr 2024",
+          "rating": 3.5,
+          "price": 230
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Amit Singh",
+      "username": "as19",
+      "password": "amit123",
+      "email": "amit@gmail.com",
+      "phone": 7654321098,
+      "totalTravelled": 73,
+      "totalRides": 18,
+      "money": 1540,
+      "photo": "./user-img/user4.jpg",
+      "rides": [
+        {
+          "from": "Bhubaneswar",
+          "to": "Omfed Square",
+          "date": "10 Aug 2023",
+          "rating": 3.8,
+          "price": 230
+        },
+        {
+          "from": "Omfed Square",
+          "to": "Bhubaneswar",
+          "date": "14 Sep 2023",
+          "rating": 4.4,
+          "price": 250
+        },
+        {
+          "from": "Cuttuck",
+          "to": "IIT",
+          "date": "19 Oct 2023",
+          "rating": 3.6,
+          "price": 200
+        },
+        {
+          "from": "IIT",
+          "to": "Patia Square",
+          "date": "24 Nov 2023",
+          "rating": 4.1,
+          "price": 180
+        },
+        {
+          "from": "Patia Square",
+          "to": "Damana",
+          "date": "29 Dec 2023",
+          "rating": 3.5,
+          "price": 210
+        },
+        {
+          "from": "Damana",
+          "to": "Cuttuck",
+          "date": "2 Feb 2024",
+          "rating": 3.8,
+          "price": 220
+        },
+        {
+          "from": "Cuttuck",
+          "to": "Omfed Square",
+          "date": "6 Mar 2024",
+          "rating": 4.0,
+          "price": 200
+        },
+        {
+          "from": "Omfed Square",
+          "to": "Bhubaneswar",
+          "date": "11 Apr 2024",
+          "rating": 3.7,
+          "price": 210
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sneha Mishra",
+      "username": "sm22",
+      "password": "sneha123",
+      "email": "sneha@gmail.com",
+      "phone": 6543210987,
+      "totalTravelled": 92,
+      "totalRides": 22,
+      "money": 2740,
+      "photo": "./user-img/user5.jpg",
+      "rides": [
+        {
+          "from": "Khordha",
+          "to": "Cuttuck",
+          "date": "13 Aug 2023",
+          "rating": 4.0,
+          "price": 190
+        },
+        {
+          "from": "Cuttuck",
+          "to": "Bhubaneswar",
+          "date": "16 Sep 2023",
+          "rating": 4.2,
+          "price": 200
+        },
+        {
+          "from": "Bhubaneswar",
+          "to": "IIT",
+          "date": "21 Oct 2023",
+          "rating": 3.7,
+          "price": 210
+        },
+        {
+          "from": "IIT",
+          "to": "Infocity",
+          "date": "26 Nov 2023",
+          "rating": 3.5,
+          "price": 220
+        },
+        {
+          "from": "Infocity",
+          "to": "Patia Square",
+          "date": "1 Jan 2024",
+          "rating": 4.1,
+          "price": 230
+        },
+        {
+          "from": "Patia Square",
+          "to": "Damana",
+          "date": "5 Feb 2024",
+          "rating": 3.9,
+          "price": 240
+        },
+        {
+          "from": "Damana",
+          "to": "Khordha",
+          "date": "10 Mar 2024",
+          "rating": 4.3,
+          "price": 250
+        },
+        {
+          "from": "Khordha",
+          "to": "Bhubaneswar",
+          "date": "15 Apr 2024",
+          "rating": 4.2,
+          "price": 260
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Arun Kumar",
+      "username": "ak19",
+      "password": "arun123",
+      "email": "arun67@gmail.com",
+      "phone": 5432109876,
+      "totalTravelled": 78,
+      "totalRides": 19,
+      "money": 540,
+      "photo": "",
+      "rides": [
+        {
+          "from": "Patia Square",
+          "to": "Cuttuck",
+          "date": "14 Jul 2023",
+          "rating": 4.1,
+          "price": 210
+        },
+        {
+          "from": "Cuttuck",
+          "to": "Damana",
+          "date": "18 Aug 2023",
+          "rating": 3.9,
+          "price": 220
+        },
+        {
+          "from": "Damana",
+          "to": "Bhubaneswar",
+          "date": "23 Sept 2023",
+          "rating": 4.3,
+          "price": 230
+        },
+        {
+          "from": "Bhubaneswar",
+          "to": "Omfed Square",
+          "date": "28 Oct 2023",
+          "rating": 3.7,
+          "price": 240
+        },
+        {
+          "from": "Omfed Square",
+          "to": "IIT",
+          "date": "2 Dec 2023",
+          "rating": 4.1,
+          "price": 250
+        },
+        {
+          "from": "IIT",
+          "to": "Infocity",
+          "date": "7 Jan 2024",
+          "rating": 3.5,
+          "price": 260
+        },
+        {
+          "from": "Infocity",
+          "to": "Patia Square",
+          "date": "12 Feb 2024",
+          "rating": 3.8,
+          "price": 270
+        },
+        {
+          "from": "Patia Square",
+          "to": "Cuttuck",
+          "date": "17 Mar 2024",
+          "rating": 4.0,
+          "price": 280
+        }
+      ]
+    }
+  ]
+  

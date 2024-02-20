@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="user.css">
+
+
+	<title>User Profile</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		
+		<a href="./../HomePage/index.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Ride Sync</span>
+		</a>
+		<nav>
+			<ul class="side-menu top">
+				<li class="active">
+				<a href="#" class="nav-link" data-section="section1">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Account</span>
+				</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link" data-section="section2">
+						<i class='bx bxs-group' ></i>
+						<span class="text">Activity</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link" data-section="section3">
+						<i class='bx bxs-shopping-bag-alt' ></i>
+						<span class="text">Reviews</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link" data-section="section4">
+						<i class='bx bxs-doughnut-chart' ></i>
+						<span class="text">Recently travelled</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="nav-link" data-section="section5">
+						<i class='bx bxs-message-dots' ></i>
+						<span class="text">Ratings</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="./../HomePage/index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="./user-img/user1.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Profile</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Profile</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+
+			<div id="section1" class="section active">
+				<div class="table-data">
+					<div class="order">
+					<div class="head">
+						<h3>User Details </h3> 
+					</div>
+					<ul class="box-info">
+						<li>
+							<i class='bx bx-run'></i></i>
+							<span class="text">
+								<h3>{%KMS%}</h3>
+								<p>KMS Travelled</p>
+							</span>
+						</li>
+						<li>
+							<i class='bx bxs-car'></i></i>
+							<span class="text">
+								<h3>{%RIDES%}</h3>
+								<p>Rides</p>
+							</span>
+						</li>
+						<li>
+							<i class='bx bx-rupee'></i></i>
+							<span class="text">
+								<h3>{%MONEY}</h3>
+								<p>Money spent</p>
+							</span>
+						</li>
+					</ul>
+		
+					
+					</div>
+					<!--user profile-->
+					<div class="user-profile">
+					<div class="head">
+						<h3>User Profile</h3>
+						
+					</div>
+					<div class="pro-photo">
+						<img src="{%PHOTO%}" />;
+					</div>
+					<ul class="ulist">
+						
+						<li class="pro-ele">
+							<p>{%USERNAME%}</p>
+						</li>
+						<li class="pro-ele">
+							<p>{%EMAIL%}</p>
+						</li>
+						<li class="pro-ele">
+							<p>{%NUMBER%}</p>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+			<div id="section2" class="section">
+				<div>
+					<h1>NO RECENT ACTIVITIES TO SHOW</h1>
+				</div>
+			</div>
+			<div id="section3" class="section">
+				<div class="wrapper">
+					<div class="box">
+					  <i class="fas fa-quote-left quote"></i>
+					  <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+					  <div class="content">
+						<div class="info">
+						  <div class="name">Alex Smith</div>
+						  <div class="job">Designer | Developer</div>
+						  <div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+						  </div>
+						</div>
+						<div class="image">
+						  <img src="images/profile-1.jpeg" alt="">
+						</div>
+					  </div>
+					</div>
+					<div class="box">
+					  <i class="fas fa-quote-left quote"></i>
+					  <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+					  <div class="content">
+						<div class="info">
+						  <div class="name">Steven Chris</div>
+						  <div class="job">YouTuber | Blogger</div>
+						  <div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+						  </div>
+						</div>
+						<div class="image">
+						  <img src="images/profile-2.jpeg" alt="">
+						</div>
+					  </div>
+					</div>
+					<div class="box">
+					  <i class="fas fa-quote-left  quote"></i>
+					  <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+					  <div class="content">
+						<div class="info">
+						  <div class="name">Kristina Bellis</div>
+						  <div class="job">Freelancer | Advertiser</div>
+						  <div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						  </div>
+						</div>
+						<div class="image">
+						  <img src="images/profile-3.jpeg" alt="">
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+			<div id="section4" class="section">
+
+				<div class="dilivery__span">Recent Ride</div>
+				<div class="dilivery">
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				  <div class="dilivery__box">
+					<div class="dilivery__box__from">BBSR</div>
+					<ion-icon
+					  name="arrow-forward-outline"
+					  class="dilivery__box__icon"
+					></ion-icon>
+					<div class="dilivery__box__to">Cuttack</div>
+					<div class="dilivery__box__time">12 Aug 2023</div>
+					<div class="dilivery__box__rating">4.7 ★</div>
+					<div class="dilivery__box__price">220₹</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div id="section5" class="section">Ratings</div>
+			
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+</body>
+<script src="user.js"></script>
+	<script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
