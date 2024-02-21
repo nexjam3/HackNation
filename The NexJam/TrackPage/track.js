@@ -1,75 +1,4 @@
-// "use strict";
-// let map;
-// function useLocation(latitude, longitude) {
-//   if (map) {
-//     map.setCenter({ lat: latitude, lng: longitude });
-//   } else {
-//     map = new mappls.Map("map", {
-//       center: { lat: latitude, lng: longitude },
-//       zoom: 11,
-//     });
-//   }
-// }
-
-// navigator.geolocation.getCurrentPosition(function (pos) {
-//   const { latitude, longitude } = pos.coords;
-//   useLocation(latitude, longitude);
-// });
-
-// useLocation(0, 0);
-
-// const coordsBike = [
-//   [20.276049, 85.8645378],
-//   [20.2760345, 85.8345338],
-//   [20.246059, 85.8245324],
-//   [20.236049, 85.8645378],
-//   [20.2160345, 85.8345338],
-//   [20.226059, 85.8245324],
-// ];
-
-// const coordsCar = [
-//   [20.272792, 85.865917],
-//   [20.277304, 85.830012],
-//   [20.244158, 85.823271],
-//   [20.236049, 85.8145378],
-//   [20.2160345, 85.8245338],
-//   [20.226059, 85.8345324],
-// ];
-
-// coordsBike.forEach((cord) => {
-//   var marker = new mappls.Marker({
-//     map: map,
-//     icon: "./img/bike-2.png",
-//     position: { lat: cord[0], lng: cord[1] },
-//   });
-// });
-
-// coordsCar.forEach((cord) => {
-//   var marker = new mappls.Marker({
-//     map: map,
-//     icon: "./img/car-2.png",
-//     position: { lat: cord[0], lng: cord[1] },
-//   });
-// });
-
-// map.addListener("click", function (e) {
-//   console.log(e);
-// });
-
-// var marker = new mappls.Marker({
-//   map: map,
-//   icon: "./img/location.png",
-//   position: { lat: 20.350347364306387, lng: 85.805199143396072 },
-// });
-
-// totalData.forEach((place) => {
-//   var marker = new mappls.Marker({
-//     map: map,
-//     icon: "./img/popular-locations.png",
-//     position: { lat: place.lat, lng: place.lng },
-//   });
-//   console.log(place.lat, place.lng);
-// });
+"use strict";
 
 var map = L.map("map").setView([20.350347364306387, 85.805199143396072], 15);
 
@@ -79,21 +8,21 @@ L.tileLayer("https://tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-var locationIcon = L.icon({
+let locationIcon = L.icon({
   iconUrl: "./img/location.png",
 
   iconSize: [50, 50],
   iconAnchor: [50, 50],
 });
 
-var carIcon = L.icon({
+let carIcon = L.icon({
   iconUrl: "./img/car-2.png",
 
   iconSize: [50, 50],
   iconAnchor: [50, 50],
 });
 
-var bikeIcon = L.icon({
+let bikeIcon = L.icon({
   iconUrl: "./img/bike-2.png",
 
   iconSize: [50, 50],
@@ -121,6 +50,126 @@ const bikeCords = [
   [20.355073304517045, 85.81286713627416],
 ];
 
+const bikeRoutes = [
+  {
+    id: 0,
+    name: "Rahul Sharam",
+    from: [20.329993659381863, 85.80617469089303],
+    to: [20.36241254253824, 85.8105689753764],
+  },
+  {
+    id: 1,
+    name: "Ankit Yadav",
+    from: [20.262648793213824, 85.83541498014227],
+    to: [20.364802012595568, 85.82877109666185],
+  },
+  {
+    id: 2,
+    name: "Ravi Mani",
+    from: [20.332605936515563, 85.82130844656666],
+    to: [20.353499091975852, 85.7681097045141],
+  },
+  {
+    id: 3,
+    name: "Gori Yadav",
+    from: [20.421192731870207, 85.83065040939198],
+    to: [20.299319027847755, 85.78070558772885],
+  },
+  {
+    id: 4,
+    name: "Nabi Mani",
+    from: [20.3676415139403, 85.88831800650307],
+    to: [20.33917958951271, 85.76853061160946],
+  },
+  {
+    id: 5,
+    name: "Bira Nayak0",
+    from: [20.23884878663084, 85.75756072998047],
+    to: [20.362416896612718, 85.78631401062013],
+  },
+  {
+    id: 6,
+    name: "Virat Singh",
+    from: [20.318943392547265, 85.80940246582033],
+    to: [20.42178515703598, 85.78296661376953],
+  },
+];
+
+const carRoutes = [
+  {
+    id: 0,
+    from: [20.312326593787798, 85.83366561721208],
+    to: [20.381509280356052, 85.7554885971791],
+  },
+
+  {
+    id: 1,
+    from: [20.398007010621665, 85.8623976005634],
+    to: [20.27779322725157, 85.7276796851028],
+  },
+  {
+    id: 2,
+    from: [20.35723805876347, 85.85374637177087],
+    to: [20.199994754296117, 86.04618502993006],
+  },
+  {
+    id: 3,
+    from: [20.35886962405026, 85.79639369979797],
+    to: [20.319554420137813, 85.84285476745364],
+  },
+  {
+    id: 4,
+    from: [20.31656063354178, 85.71462570538462],
+    to: [20.353069999393032, 85.8678780601697],
+  },
+];
+
+bikeRoutes.forEach((rout) => {
+  L.marker(rout.from, {
+    icon: bikeIcon,
+  }).addTo(map);
+  L.marker(rout.to, {
+    icon: bikeIcon,
+  }).addTo(map);
+
+  L.Routing.control({
+    waypoints: [
+      L.latLng(rout.from[0], rout.from[1]),
+      L.latLng(rout.to[0], rout.to[1]),
+    ],
+    lineOptions: {
+      styles: [{ color: "#FF0000", opacity: 0.8, weight: 5 }],
+    },
+    createMarker: function () {
+      return null;
+    },
+    icon: locationIcon,
+  }).addTo(map);
+});
+
+carRoutes.forEach((rout) => {
+  L.marker(rout.from, {
+    icon: carIcon,
+  }).addTo(map);
+  L.marker(rout.to, {
+    icon: carIcon,
+  }).addTo(map);
+
+  L.Routing.control({
+    waypoints: [
+      L.latLng(rout.from[0], rout.from[1]),
+      L.latLng(rout.to[0], rout.to[1]),
+    ],
+    lineOptions: {
+      styles: [{ color: "#FF0000", opacity: 0.8, weight: 5 }],
+    },
+    createMarker: function () {
+      return null;
+    },
+    icon: locationIcon,
+  }).addTo(map);
+});
+
 const carCords = [
   [20.349779337894837, 85.80738509216981],
   [20.348722866648572, 85.80638736406574],
@@ -130,13 +179,13 @@ const carCords = [
   [20.338816679294773, 85.80618264509756],
 ];
 
-bikeCords.forEach((veh) => {
-  L.marker(veh, { icon: bikeIcon }).addTo(map);
-});
+// bikeCords.forEach((veh) => {
+//   L.marker(veh, { icon: bikeIcon }).addTo(map);
+// });
 
-carCords.forEach((veh) => {
-  L.marker(veh, { icon: carIcon }).addTo(map);
-});
+// carCords.forEach((veh) => {
+//   L.marker(veh, { icon: carIcon }).addTo(map);
+// });
 
 const btnPrice = document.querySelector(".form__btn");
 const inputFrom = document.querySelector(".form__input--from");
@@ -198,17 +247,40 @@ btnPrice.addEventListener("click", function (e) {
   else if (selectedOption === "Auto") pricePerKm = 9;
   else pricePerKm = 12;
 
-  var point1 = L.latLng(placeFrom.lat, placeFrom.lng);
-  var point2 = L.latLng(placeTo.lat, placeTo.lng);
-  var distanceval = point1.distanceTo(point2);
-  var kmDistance = (distanceval / 1000).toFixed(1);
-  var priceVal = (kmDistance * pricePerKm).toFixed(2);
+  let point1 = L.latLng(placeFrom.lat, placeFrom.lng);
+  let point2 = L.latLng(placeTo.lat, placeTo.lng);
+  let distanceval = point1.distanceTo(point2);
+
+  let kmDistance = (distanceval / 1000).toFixed(1);
+  let priceVal = (kmDistance * pricePerKm).toFixed(2);
   document.querySelector(".book").style.opacity = 1;
   price.textContent = `₹${priceVal}`;
   distance.textContent = `${kmDistance} KM`;
   ridePrice.textContent = rideTotal.textContent = `${priceVal} ₹`;
   console.log(price.textContent, distance.textContent);
+
+  let shortDistance = 1000000000000000000000;
+  let shortName = "";
+
+  bikeRoutes.forEach((el) => {
+    const distance = distanceCalFunc(el.from, placeFrom);
+    if (distance < shortDistance) {
+      shortDistance = distance;
+      shortName = el.name;
+    }
+
+    console.log(distance);
+  });
+
+  document.querySelector(".book__rider__name").textContent = shortName;
 });
+
+const distanceCalFunc = function (p1, p2) {
+  let point1 = L.latLng(p1[0], p1[1]);
+  let point2 = L.latLng(p2.lat, p2.lng);
+  let distanceval = point1.distanceTo(point2);
+  return distanceval;
+};
 
 console.log(bookBtn, paymentPage);
 
